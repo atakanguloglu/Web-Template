@@ -1,0 +1,659 @@
+/*Mobil kısmı */
+
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  
+    img {
+      max-width: 100%;
+    }
+  
+    button,
+    a {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+/*Genel sayfa Kısmı */
+body{
+    margin: 0;
+    padding: 0; 
+    background-color:#657383;
+}
+#hero video{
+    height: 100vh;
+    width: 100%;
+    background-position: absolute;
+    z-index: 10;
+    object-fit: cover;
+}
+#hero .content{
+    background: rgba(0, 0, 0, 0, 5);
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left:0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    position: absolute;
+    
+    top: 10%;
+    
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-family: "Tahoma", sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.4s linear;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn:hover {
+    color: #FFF;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #4a6177;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btn1::before {
+    transform: scaleX(0);
+}
+
+.btn1:hover::before {
+    transform: scaleX(1);
+}
+
+.btn2::before {
+    transform: scaleY(0);
+}
+
+.btn2:hover::before {
+    transform: scaleY(1);
+}
+
+.btn3::before {
+    transform: scaleY(0);
+}
+
+.btn3:hover::before {
+    transform: scaleY(1);
+}
+
+.btn4::before {
+    transform: scaleX(0);
+}
+
+.btn4:hover::before {
+    transform: scaleX(1);
+}
+#şekil{
+    color: white;
+}
+/*Foter kısımı */
+.footer_section {
+    width: 100%;
+    float: left;
+    background-image: url(../images/footer-bg.png);
+    height: auto;
+    padding-top: 250px;
+    background-size: 100% 100%;
+    padding-bottom: 30px;
+    background-repeat: no-repeat;
+
+}
+
+.input_btn_main {
+    width: 50%;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 8px 0px;
+    margin: 0 auto;
+}
+
+.mail_text {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: black;
+    background-color: #ffffff;
+    height: auto;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 0px;
+    
+    
+}
+
+.subscribe_bt {
+    float: right;
+    list-style-type:none;
+    color:rgb(71, 71, 124)
+}
+
+.subscribe_bt a {
+    width: 170px;
+    float: left;
+    font-size: 18px;
+    color: #2b2278;
+    background-color: transparent;
+    padding: 5px 0px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.subscribe_bt a:hover {
+    color: #000;
+    background-color: transparent;
+}
+
+.social_icon {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    list-style-type:none;
+}
+.social_iconindex{
+    position: absolute;
+    top: 720px;
+    left: 1290px;
+    margin: auto;
+    border-style: solid;
+    list-style-type:none;
+    border: none;
+    text-align: center;
+    list-style-type:none;
+    
+}
+
+.social_icon ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    text-align: center;
+    list-style-type:none;
+    
+}
+
+.social_icon li {
+    float: left;
+    padding: 30px 5px;
+    
+}
+
+.location_main {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+.call_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    padding-top: 10px;
+    text-decoration: none;
+    
+    
+}
+
+.call_text a {
+    color: #ffffff;
+}
+
+.call_text a:hover {
+    color: #174c7e;
+}
+
+
+/* footer section end */
+
+.copyright_section {
+    width: 100%;
+    float: left;
+    background-color: #4a6177;
+    height: auto;
+}
+
+.copyright_text {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 0px;
+    text-decoration: none;
+}
+
+.copyright_text a {
+    color: #ffffff;
+}
+
+.copyright_text a:hover {
+    color: #174c7e;
+}
+
+.col-sm-4{
+    width: 30%;
+    float: left;
+    margin: 30px;
+    font-family: 'Lobster', cursive;
+    
+    
+}
+
+.col-sm-4:hover{
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+     transform: scale(1.1);
+   }
+
+
+
+.margin{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    
+ }
+
+ /* analog saat */
+ .clock {
+    position: absolute;
+    top: 250px;
+    left:250px;
+    width: 24rem;
+    height: 24rem;
+    border: 8px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    background: url("https://cssanimation.rocks/images/posts/clocks/ios_clock.svg") center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    
+}
+
+.secs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 11rem;
+    width: .2rem;
+    background-color: green;
+    transform: translateX(-50%);
+    transform-origin: 30% 0;
+}
+
+.mins {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 9rem;
+    width: .3rem;
+    border-radius: 20px;
+    background-color: black;
+    transform: translateX(-50%);
+    transform-origin: 25% 0;
+}
+
+.hours {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 6rem;
+    width: .5rem;
+    background-color: black;
+    border-radius: 15px;
+    transform: translateX(-50%);
+    transform-origin: 50% 0;
+}
+
+.dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    width: 8%;
+    opacity: 0.8;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    border:none;
+}
+
+.container-fluid {
+    width: 100%;  
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto; 
+    margin-left: auto;
+   
+}
+
+
+
+/*hakkında kısmı */
+
+.hakkında{
+    margin:auto;
+    background-color:#4a6177;
+    min-height: 850px;
+    
+    } 
+
+    
+    .hakkındaresim{
+    float:right;
+    padding: 30px 0px 10px;
+    width: 35%;
+    
+    
+    }
+    .metin{
+        height: 280px;
+
+       
+    }   
+    .hakkındametin{
+        
+        font-size:25px;
+        font-family: 'Lobster', cursive;
+        text-indent: 18px;
+        font-weight: 20px;
+        
+    }
+
+    .başlık{
+        font-size: 50px;
+        color: rgb(26, 65, 33);
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        text-shadow: black 3px 1px 1px ;
+    }
+
+    /*İletişim kısmı*/
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+ 
+   
+    
+     
+   #contact input[type="text"],
+    #contact input[type="email"],
+    #contact textarea,
+    #contact button[type="submit"] {
+        font: 500 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+    }
+     
+    #contact {
+        background: #4a6177;
+        padding: 25px;
+        margin: 100px 0;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+     
+    #contact h2 {
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+     
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        background: #FFF;
+        margin: 0 0 5px;
+        padding: 10px;
+    }
+     
+    #contact input[type="text"]:hover,
+    #contact input[type="email"]:hover,
+    #contact textarea:hover {
+        -webkit-transition: border-color 0.4s ease-in-out;
+        -moz-transition: border-color 0.4s ease-in-out;
+        transition: border-color 0.4s ease-in-out;
+        border: 1px solid #aaa;
+    }
+     
+    #contact textarea {
+        height: 120px;
+        max-width: 100%;
+        resize: none;
+    }
+     
+    #contact button[type="submit"] {
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        background: #174c7e;
+        color: #FFF;
+        margin: 0 0 5px;
+        padding: 10px;
+        font-size: 15px;
+    }
+     
+    #contact button[type="submit"]:hover {
+        background: #355C7D;
+        -webkit-transition: background 0.4s ease-in-out;
+        -moz-transition: background 0.4s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
+    }
+     
+    #contact button[type="submit"]:active {
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+     
+    
+    #contact textarea:focus {
+        outline: 0;
+        border: 1px solid #aaa;
+    }
+
+    #blogarkaplan{
+        background-color: #4a6177;
+        min-height: 1650px;
+        width: auto
+    }
+
+    @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap";
+
+    .animation_text h1 {
+    font-family:"Tahoma", sans-serif;
+    text-align:center;
+    color:rgba(255, 255, 255, 0.26);
+    font-size:90px;
+    font-weight:500;
+    line-height:70px;
+    position:absolute ;
+    top:700px;
+    left:30px;
+    text-shadow: #eeeeee 1px 1px 3px;
+    }
+    
+    .animation_text h1 span {
+    color:rgba(3, 65, 3, 0.589);
+    text-shadow: #000 1px 1px 3px;
+    }
+    
+    @media(max-width:768px) {
+    .animation_text h1 {
+    font-size:30px
+    }
+    } 
+
+    .pagination {
+		display: -moz-inline-flex;
+		display: -webkit-inline-flex;
+		display: -ms-inline-flex;
+		display: inline-flex;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		cursor: default;
+		list-style: none;
+		margin: 0 0 2rem 2px;
+		padding:0;
+        position: relative;
+        right:530px;
+        
+	}
+
+		.pagination a, .pagination span {
+			-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+			-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+			-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+			transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+			border: solid 2px;
+			display: inline-block;
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-size: 0.8rem;
+			font-weight: 900;
+			height: 3rem;
+			letter-spacing: 0.075em;
+			line-height: calc(3rem - 4px);
+			margin-left: -2px;
+			min-width: 3rem;
+			position: relative;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.pagination .next, .pagination .previous {
+			text-decoration: none;
+			padding: 0 1.75rem;
+		}
+
+			.pagination .next:before, .pagination .previous:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				display: inline-block;
+				font-style: normal;
+				font-variant: normal;
+				text-rendering: auto;
+				line-height: 1;
+				text-transform: none !important;
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
+			}
+
+			.pagination .next:before, .pagination .previous:before {
+				display: inline-block;
+				color: inherit !important;
+				line-height: inherit;
+			}
+
+		.pagination .previous:before {
+			content: '\f104';
+			margin-right: 0.9375em;
+		}
+
+		.pagination .next:before {
+			content: '\f105';
+			float: right;
+			
+		}
+
+        @media screen and (max-width: 980px) {
+
+			.pagination a, .pagination span {
+				font-size: 0.9rem;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.pagination .page, .pagination .extra {
+				display: none;
+			}
+
+		}
+
+	.pagination a, .pagination span {
+		border-color: #eeeeee;
+	}
+
+	.pagination a {
+		color: #212931 !important;
+	}
+
+		.pagination a:hover {
+			color: #18bfef !important;
+			border-color: #18bfef;
+			z-index: 1;
+		}
+
+			.pagination a:hover + a,
+			.pagination a:hover + span {
+				border-left-color: #18bfef;
+			}
+
+		.pagination a.active {
+			background-color: #eeeeee;
+		}
+
+	.pagination span {
+		color: #eeeeee;
+	}
+
+.örnekiçerik{
+    position: relative;
+    top: 100px;
+}
+   
+.hakkındametin1{
+        
+    font-size:25px;
+    font-family: 'Lobster', cursive;
+    text-indent: 18px;
+    font-weight: 35px;
+    color: rgb(112, 112, 112);
+    text-shadow: black 2px 4px 3px ;
+
+    
+}
